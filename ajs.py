@@ -86,7 +86,7 @@ mid = cl.getProfile().mid
 Amid = ko.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
-Dmid = se.getProfile().mid
+Dmid = ke.getProfile().mid
 Emid = kf.getProfile().mid
 Fmid = kg.getProfile().mid
 Gmid = kh.getProfile().mid
@@ -1810,42 +1810,40 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "â§FunkZher PÅÃÅ¤ÄÄÅ¤ÃÃÅâ§\n"
-                                if wait["sticker"] == True: md+="â§StickerãONã\n"
-                                else: md+="â§StickerãOFFã\n"
-                                if wait["contact"] == True: md+="â§ContactãONã\n"
-                                else: md+="â§ContactãOFFã\n"
-                                if wait["talkban"] == True: md+="â§TalkbanãONã\n"
-                                else: md+="â§TalkbanãOFFã\n"
-                                if wait["Mentionkick"] == True: md+="â§NotagãONã\n"
-                                else: md+="â§NotagãOFFã\n"
-                                if wait["detectMention"] == True: md+="â§ResponãONã\n"
-                                else: md+="â§ResponãOFFã\n"
-                                if wait["autoJoin"] == True: md+="â§AutojoinãONã\n"
-                                else: md+="â§AutojoinãOFFã\n"
-                                if wait["autoAdd"] == True: md+="â§AutoaddãONã\n"
-                                else: md+="â§AutoaddãOFFã\n"
-                                if msg.to in welcome: md+="â§WelcomeãONã\n"
-                                else: md+="â§WelcomeãOFFã\n"
-                                if wait["autoLeave"] == True: md+="â§AutoleaveãONã\n"
-                                else: md+="â§AutoleaveãOFFã\n"
-                                if msg.to in protectqr: md+="â§ProtecturlãONã\n"
-                                else: md+="â§ProtecturlãOFFã\n"
-                                if msg.to in protectjoin: md+="â§ProtectjoinãONã\n"
-                                else: md+="â§ProtectjoinãOFFã\n"
-                                if msg.to in protectkick: md+="â§ProtectkickãONã\n"
-                                else: md+="â§ProtectkickãOFFã\n"
-                                if msg.to in protectcancel: md+="â§ProtectcancelãONã\n"
-                                else: md+="â§ProtectcancelãOFFã\n"
-                                if msg.to in protectantijs: md+="â§AntijsãONã\n"
-                                else: md+="â§AntijsãOFFã\n"  
-                                if msg.to in ghost: md+="â§GhostãONã\n"
-                                else: md+="â§GhostãOFFã\n"                                   
-                                cl.sendMessage(msg.to, md+"\nTanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nJam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]")
+                                md = "  ☣━━━━━━━━━━━━━━━☣\n         ✯ S T A T U S ✯\n☣━━━━━━━━━━━━━━━☣\n"
+                                if wait["sticker"] == True: md+="❂-➣STC「ON」\n"
+                                else: md+="❂-➣STC「OFF」\n"
+                                if wait["contact"] == True: md+="❂-➣Contact「ON」\n"
+                                else: md+="❂-➣Contact「OFF」\n"
+                                if wait["talkban"] == True: md+="❂-➣Talkban「ON」\n"
+                                else: md+="❂-➣Talkban「OFF」\n"
+                                if wait["detectMention"] == True: md+="❂-➣Respon「ON」\n"
+                                else: md+="❂-➣Respon「OFF」\n"
+                                if wait["autoJoin"] == True: md+="❂-➣Autojoin「ON」\n"
+                                else: md+="❂-➣Autojoin「OFF」\n"
+                                if wait["autoAdd"] == True: md+="❂-➣Autoadd「ON」\n"
+                                else: md+="❂-➣Autoadd「OFF」\n"
+                                if msg.to in welcome: md+="❂-➣Welcome「ON」\n"
+                                else: md+="❂-➣Welcome「OFF」\n"
+                                if wait["autoLeave"] == True: md+="❂-➣Autoleave「ON」\n"
+                                else: md+="❂-➣Autoleave「OFF」\n"
+                                if msg.to in protectqr: md+="❂-➣Protecturl「ON」\n"
+                                else: md+="❂-➣Protecturl「OFF」\n"
+                                if msg.to in protectjoin: md+="❂-➣Protectjoin「ON」\n"
+                                else: md+="❂-➣Protectjoin「OFF」\n"
+                                if msg.to in protectkick: md+="❂-➣Protectkick「ON」\n"
+                                else: md+="❂-➣Protectkick「OFF」\n"
+                                if msg.to in protectinvite: md+="❂-➣Protectinvite「ON」\n"
+                                else: md+="❂-➣Protectinvite「OFF」\n"
+                                if msg.to in protectcancel: md+="❂-➣Protectcancel「ON」\n"
+                                else: md+="❂-➣Protectcancel「OFF」\n"
+                                if msg.to in protectantijs: md+="❂-➣Antijs「ON」\n"
+                                else: md+="❂-➣Antijs「OFF」\n"                                   
+                                cl.sendMessage(msg.to, md+"☣━━━━━━━━━━━━━━━☣\nFunkZher Bot\nPROTECTION\n  ☣━━━━━━━━━━━━━━━☣")
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"Creator Bot ARIFISTIFIK") 
+                                cl.sendText(msg.to,"Creator Bot Funkzher") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -1905,6 +1903,24 @@ def bot(op):
                                msg.contentMetadata = {'mid': Cmid}
                                cl.sendMessage1(msg)
                                msg.contentType = 13
+                               msg.contentMetadata = {'mid': Dmid}
+                               cl.sendMessage1(msg) 
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Emid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Fmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Gmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Hmid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
+                               msg.contentMetadata = {'mid': Imid}
+                               cl.sendMessage1(msg)
+                               msg.contentType = 13
                                msg.contentMetadata = {'mid': Zmid}
                                cl.sendMessage1(msg)
 
@@ -1921,9 +1937,15 @@ def bot(op):
                             if msg._from in admin:
                                try:
                                    cl.removeAllMessages(op.param2)
-                                   ki.removeAllMessages(op.param2)
+                                   ko.removeAllMessages(op.param2)
                                    kk.removeAllMessages(op.param2)
                                    kc.removeAllMessages(op.param2)
+                                   ke.removeAllMessages(op.param2)
+                                   kf.removeAllMessages(op.param2)
+                                   kg.removeAllMessages(op.param2)
+                                   kh.removeAllMessages(op.param2)
+                                   ki.removeAllMessages(op.param2)
+                                   kj.removeAllMessages(op.param2)
                                    cl.sendText(msg.to,"Chat dibersihkan...")
                                except:
                                    pass
@@ -2455,11 +2477,17 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 try:
-                                    anggota = [Bmid,Cmid,Amid]
+                                    anggota = [Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid]
                                     cl.inviteIntoGroup(msg.to, anggota)
+                                    ko.acceptGroupInvitation(msg.to)
                                     kk.acceptGroupInvitation(msg.to)
                                     kc.acceptGroupInvitation(msg.to)
+                                    ke.acceptGroupInvitation(msg.to)
+                                    kf.acceptGroupInvitation(msg.to)
+                                    kg.acceptGroupInvitation(msg.to)
+                                    kh.acceptGroupInvitation(msg.to)
                                     ki.acceptGroupInvitation(msg.to)
+                                    kj.acceptGroupInvitation(msg.to)
                                 except:
                                     pass
                                 
@@ -3073,100 +3101,233 @@ def bot(op):
                               spl = msg.text.replace('Protecturl ','')
                               if spl == 'on':
                                   if msg.to in protectqr:
-                                       msgs = "Protect url sudah aktif"
+                                       msgs = "Protect url sudah aktif ♪♪"
                                   else:
                                        protectqr.append(msg.to)
                                        ginfo = cl.getGroup(msg.to)
-                                       msgs = "Protect url diaktifkan\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "ãDiaktifkanã\n" + msgs)
+                                       msgs = "Protect url diaktifkan ♪♪"
+                                  cl.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kk.sendMessage(msg.to, msgs)
+                                  kc.sendMessage(msg.to, msgs)
+                                  ke.sendMessage(msg.to, msgs)
+                                  kf.sendMessage(msg.to, msgs)
+                                  kg.sendMessage(msg.to, msgs)
+                                  kh.sendMessage(msg.to, msgs)
+                                  ki.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kj.sendMessage(msg.to, msgs)
                               elif spl == 'off':
                                     if msg.to in protectqr:
                                          protectqr.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Protect url dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                         msgs = "Protect url dinonaktifkan ♪♪"
                                     else:
-                                         msgs = "Protect url sudah tidak aktif"
-                                    cl.sendMessage(msg.to, "ãDinonaktifkanã\n" + msgs)
+                                         msgs = "Protect url sudah tidak aktif ♪♪"
+                                    cl.sendMessage(msg.to, msgs)
+                                    ko.sendMessage(msg.to, msgs)
+                                    kk.sendMessage(msg.to, msgs)
+                                    kc.sendMessage(msg.to, msgs)
+                                    ke.sendMessage(msg.to, msgs)
+                                    kf.sendMessage(msg.to, msgs)
+                                    kg.sendMessage(msg.to, msgs)
+                                    kh.sendMessage(msg.to, msgs) 
+                                    ki.sendMessage(msg.to, msgs)
+                                    kj.sendMessage(msg.to, msgs)
 
                         elif 'Protectkick ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectkick ','')
                               if spl == 'on':
                                   if msg.to in protectkick:
-                                       msgs = "Protect kick sudah aktif"
+                                       msgs = "Protect kick sudah aktif ♪♪"
                                   else:
                                        protectkick.append(msg.to)
                                        ginfo = cl.getGroup(msg.to)
-                                       msgs = "Protect kick diaktifkan\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "ãDiaktifkanã\n" + msgs)
+                                       msgs = "Protect kick diaktifkan ♪♪"
+                                  cl.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kk.sendMessage(msg.to, msgs)
+                                  kc.sendMessage(msg.to, msgs)
+                                  ke.sendMessage(msg.to, msgs)
+                                  kf.sendMessage(msg.to, msgs)
+                                  kg.sendMessage(msg.to, msgs)
+                                  kh.sendMessage(msg.to, msgs)
+                                  ki.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kj.sendMessage(msg.to, msgs)
                               elif spl == 'off':
                                     if msg.to in protectkick:
                                          protectkick.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Protect kick dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                         msgs = "Protect kick dinonaktifkan ♪♪"
                                     else:
-                                         msgs = "Protect kick sudah tidak aktif"
-                                    cl.sendMessage(msg.to, "ãDinonaktifkanã\n" + msgs)
+                                         msgs = "Protect kick sudah tidak aktif ♪♪"
+                                    cl.sendMessage(msg.to, msgs)
+                                    ko.sendMessage(msg.to, msgs)
+                                    kk.sendMessage(msg.to, msgs)
+                                    kc.sendMessage(msg.to, msgs)
+                                    ke.sendMessage(msg.to, msgs)
+                                    kf.sendMessage(msg.to, msgs)
+                                    kg.sendMessage(msg.to, msgs)
+                                    kh.sendMessage(msg.to, msgs) 
+                                    ki.sendMessage(msg.to, msgs)
+                                    kj.sendMessage(msg.to, msgs)
 
                         elif 'Protectjoin ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectjoin ','')
                               if spl == 'on':
                                   if msg.to in protectjoin:
-                                       msgs = "Protect join sudah aktif"
+                                       msgs = "Protect join sudah aktif ♪♪"
                                   else:
                                        protectjoin.append(msg.to)
                                        ginfo = cl.getGroup(msg.to)
-                                       msgs = "Protect join diaktifkan\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "ãDiaktifkanã\n" + msgs)
+                                       msgs = "Protect join diaktifkan ♪♪"
+                                  cl.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kk.sendMessage(msg.to, msgs)
+                                  kc.sendMessage(msg.to, msgs)
+                                  ke.sendMessage(msg.to, msgs)
+                                  kf.sendMessage(msg.to, msgs)
+                                  kg.sendMessage(msg.to, msgs)
+                                  kh.sendMessage(msg.to, msgs)
+                                  ki.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kj.sendMessage(msg.to, msgs)
                               elif spl == 'off':
                                     if msg.to in protectjoin:
                                          protectjoin.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Protect join dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                         msgs = "Protect join dinonaktifkan ♪♪"
                                     else:
-                                         msgs = "Protect join sudah tidak aktif"
-                                    cl.sendMessage(msg.to, "ãDinonaktifkanã\n" + msgs)
+                                         msgs = "Protect join sudah tidak aktif ♪♪"
+                                    cl.sendMessage(msg.to, msgs)
+                                    ko.sendMessage(msg.to, msgs)
+                                    kk.sendMessage(msg.to, msgs)
+                                    kc.sendMessage(msg.to, msgs)
+                                    ke.sendMessage(msg.to, msgs)
+                                    kf.sendMessage(msg.to, msgs)
+                                    kg.sendMessage(msg.to, msgs)
+                                    kh.sendMessage(msg.to, msgs) 
+                                    ki.sendMessage(msg.to, msgs)
+                                    kj.sendMessage(msg.to, msgs)
 
                         elif 'Protectcancel ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectcancel ','')
                               if spl == 'on':
                                   if msg.to in protectcancel:
-                                       msgs = "Protect cancel sudah aktif"
+                                       msgs = "Protect cancel sudah aktif ♪♪"
                                   else:
                                        protectcancel.append(msg.to)
                                        ginfo = cl.getGroup(msg.to)
-                                       msgs = "Protect cancel diaktifkan\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "ãDiaktifkanã\n" + msgs)
+                                       msgs = "Protect cancel diaktifkan ♪♪"
+                                  cl.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kk.sendMessage(msg.to, msgs)
+                                  kc.sendMessage(msg.to, msgs)
+                                  ke.sendMessage(msg.to, msgs)
+                                  kf.sendMessage(msg.to, msgs)
+                                  kg.sendMessage(msg.to, msgs)
+                                  kh.sendMessage(msg.to, msgs)
+                                  ki.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kj.sendMessage(msg.to, msgs)
                               elif spl == 'off':
                                     if msg.to in protectcancel:
                                          protectcancel.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Protect cancel dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                         msgs = "Protect cancel dinonaktifkan ♪♪"
                                     else:
-                                         msgs = "Protect cancel sudah tidak aktif"
-                                    cl.sendMessage(msg.to, "ãDinonaktifkanã\n" + msgs)
+                                         msgs = "Protect cancel sudah tidak aktif ♪♪"
+                                    cl.sendMessage(msg.to, msgs)
+                                    ko.sendMessage(msg.to, msgs)
+                                    kk.sendMessage(msg.to, msgs)
+                                    kc.sendMessage(msg.to, msgs)
+                                    ke.sendMessage(msg.to, msgs)
+                                    kf.sendMessage(msg.to, msgs)
+                                    kg.sendMessage(msg.to, msgs)
+                                    kh.sendMessage(msg.to, msgs) 
+                                    ki.sendMessage(msg.to, msgs)
+                                    kj.sendMessage(msg.to, msgs)
+
+                        elif 'Protectinvite ' in msg.text:
+                           if msg._from in admin:
+                              spl = msg.text.replace('Protectinvite ','')
+                              if spl == 'on':
+                                  if msg.to in protectinvite:
+                                       msgs = "Protect invite sudah aktif ♪♪"
+                                  else:
+                                       protectinvite.append(msg.to)
+                                       ginfo = cl.getGroup(msg.to)
+                                       msgs = "Protect invite diaktifkan ♪♪"
+                                  cl.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs) 
+                                  kk.sendMessage(msg.to, msgs)
+                                  kc.sendMessage(msg.to, msgs)
+                                  ke.sendMessage(msg.to, msgs)
+                                  kf.sendMessage(msg.to, msgs)
+                                  kg.sendMessage(msg.to, msgs)
+                                  kh.sendMessage(msg.to, msgs)
+                                  ki.sendMessage(msg.to, msgs)
+                                  kj.sendMessage(msg.to, msgs)
+                              elif spl == 'off':
+                                    if msg.to in protectinvite:
+                                         protectinvite.remove(msg.to)
+                                         ginfo = cl.getGroup(msg.to)
+                                         msgs = "Protect invite dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                    else:
+                                         msgs = "Protect invite sudah tidak aktif"
+                                    cl.sendMessage(msg.to, msgs)
+                                    ko.sendMessage(msg.to, msgs)
+                                    kk.sendMessage(msg.to, msgs)
+                                    kc.sendMessage(msg.to, msgs)
+                                    ke.sendMessage(msg.to, msgs)
+                                    kf.sendMessage(msg.to, msgs)
+                                    kg.sendMessage(msg.to, msgs)
+                                    kh.sendMessage(msg.to, msgs) 
+                                    ki.sendMessage(msg.to, msgs)
+                                    kj.sendMessage(msg.to, msgs)
 
                         elif 'Antijs ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Antijs ','')
                               if spl == 'on':
                                   if msg.to in protectantijs:
-                                       msgs = "Anti JS sudah aktif"
+                                       msgs = "Anti JS sudah aktif ♪♪"
                                   else:
                                        protectantijs.append(msg.to)
                                        ginfo = cl.getGroup(msg.to)
-                                       msgs = "Anti JS Diaktifkan\nDi Group : " +str(ginfo.name)
-                                  cl.sendMessage(msg.to, "ãDiaktifkanã\n" + msgs)
+                                       msgs = "Anti JS Diaktifkan ♪♪"
+                                  cl.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kk.sendMessage(msg.to, msgs)
+                                  kc.sendMessage(msg.to, msgs)
+                                  ke.sendMessage(msg.to, msgs)
+                                  kf.sendMessage(msg.to, msgs)
+                                  kg.sendMessage(msg.to, msgs)
+                                  kh.sendMessage(msg.to, msgs)
+                                  ki.sendMessage(msg.to, msgs)
+                                  ko.sendMessage(msg.to, msgs)
+                                  kj.sendMessage(msg.to, msgs)
                               elif spl == 'off':
                                     if msg.to in protectantijs:
                                          protectantijs.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
-                                         msgs = "Anti JS Dinonaktifkan\nDi Group : " +str(ginfo.name)
+                                         msgs = "Anti JS Dinonaktifkan ♪♪"
                                     else:
-                                         msgs = "Anti JS Sudah Tidak Aktif"
-                                    cl.sendMessage(msg.to, "ãDinonaktifkanã\n" + msgs)
+                                         msgs = "Anti JS Sudah Tidak Aktif ♪♪"
+                                    cl.sendMessage(msg.to, msgs)
+                                    ko.sendMessage(msg.to, msgs)
+                                    kk.sendMessage(msg.to, msgs)
+                                    kc.sendMessage(msg.to, msgs)
+                                    ke.sendMessage(msg.to, msgs)
+                                    kf.sendMessage(msg.to, msgs)
+                                    kg.sendMessage(msg.to, msgs)
+                                    kh.sendMessage(msg.to, msgs) 
+                                    ki.sendMessage(msg.to, msgs)
+                                    kj.sendMessage(msg.to, msgs)
                                     
                         elif 'Ghost ' in msg.text:
                            if msg._from in admin:
