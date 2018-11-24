@@ -1,10 +1,10 @@
 { 
-    "restartPoint": {},
+    "restartPoint": true,
     "restartBot": {},
     "userAgent": {},
     "keyCommand": "",
     "autoAdd": false,
-    "autoJoin": false,
+    "autoJoin": true,
     "autoReject": false,
     "autoLeave": true,
     "autoRead": false,
